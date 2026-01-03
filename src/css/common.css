@@ -1,0 +1,14 @@
+:root {
+  --bg-surface: #f9f9f9; /* 기본 배경 */
+  --bg-footer: #f3f3f3; /* footer 배경 */
+  --border-light: #d9d9d9; /* 일반적인 경계선 */
+  --border-dark: #b4abab; /* 진한 경계선 */
+  --text-primary: #1a1a1a; /* 가장 진한 텍스트 */
+  --text-secondary: #555555; /* 본문 또는 서브 정보 */
+}
+
+body {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  color: var(--text-primary);
+  background-color: var(--bg-surface);
+}
