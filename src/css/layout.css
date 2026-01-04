@@ -6,6 +6,11 @@ header {
   top: 0;
   z-index: 1000;
   transition: 0.3s;
+  padding: 0 50px;
+}
+
+.header.detail {
+  background-color: #272727;
 }
 
 .header-inner {
@@ -15,6 +20,25 @@ header {
   height: 100%;
   display: flex;
   align-items: center;
+}
+
+/* 스크롤 시 및 호버 시 헤더 상태 제어 */
+.header:hover,
+.header.on {
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.header:hover .main-link,
+.header.on .main-link,
+.header:hover .cart-btn,
+.header.on .cart-btn {
+  color: var(--text-primary) !important;
+}
+
+.header:hover .logo img,
+.header.on .logo img {
+  filter: invert(1);
 }
 
 /* nav */
@@ -83,7 +107,8 @@ header {
 
 .menu-visual img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .menu-list-area {
@@ -123,20 +148,6 @@ header {
 .depth-3 li a:hover {
   color: var(--text-primary);
   text-decoration: underline;
-}
-
-.header:hover {
-  background-color: var(--bg-surface);
-  border-bottom: 1px solid var(--border-light);
-}
-
-.header:hover .main-link,
-.header:hover .cart-btn {
-  color: var(--text-primary) !important;
-}
-
-.header:hover .logo img {
-  filter: invert(1);
 }
 
 .cart-link {
