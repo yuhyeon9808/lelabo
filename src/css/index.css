@@ -1,3 +1,11 @@
+/* 공통 클래스 */
+.view-btn {
+  display: block;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: end;
+}
+
 /* 비디오 영역 */
 .hero-video {
   width: 100%;
@@ -10,6 +18,7 @@
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid var(--border-light);
 }
 
 .collection .collection-text-wrapper {
@@ -22,7 +31,7 @@
 }
 
 .collection .collection-text {
-  width: 390px;
+  max-width: 390px;
   height: auto;
 }
 
@@ -46,14 +55,7 @@
 }
 
 .collection .collection-text .collection-text-dis {
-  margin: 10px 0px;
-}
-
-.collection .collection-text .view-btn {
-  display: block;
-  padding: 20px 0px;
-  display: flex;
-  justify-content: end;
+  margin: 20px 0px;
 }
 
 .collection img {
@@ -66,6 +68,7 @@
     display: flex;
     flex-direction: column;
   }
+
   .collection .collection-text .collection-text-title {
     font-size: 36px;
     font-weight: 600;
@@ -73,5 +76,83 @@
 
   .collection .collection-text .collection-text-sub {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .collection .collection-text {
+    padding: 20px;
+  }
+
+  .collection .collection-text .collection-text-title {
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .collection .collection-text .collection-text-sub {
+    font-size: 18px;
+  }
+}
+
+/* 카테고리 섹션 */
+.categories {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-left: 35px;
+}
+
+.categories .categories_wrapper {
+  padding-top: 55px;
+  padding-right: 35px;
+  padding-bottom: 60px;
+}
+
+.categories .categories_wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.categories .categories_wrapper .categories-title {
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.categories .categories_wrapper .categories-border {
+  display: block;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1030px) {
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .categories .categories_wrapper:nth-child(1) {
+    padding-bottom: 5px;
+  }
+
+  .categories .categories_wrapper:nth-child(2) {
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .categories {
+    display: block;
+  }
+  .categories .categories_wrapper:nth-child(1) {
+    padding-bottom: 5px;
+  }
+
+  .categories .categories_wrapper:nth-child(2) {
+    padding-bottom: 5px;
+  }
+
+  .categories .categories_wrapper:nth-child(3) {
+    padding-bottom: 5px;
   }
 }
