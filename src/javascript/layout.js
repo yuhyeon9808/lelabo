@@ -9,6 +9,16 @@ window.addEventListener('scroll', () => {
   }
 });
 
+const mobileHeader = document.querySelector('.m-header');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    mobileHeader.classList.add('on');
+  } else {
+    mobileHeader.classList.remove('on');
+  }
+});
+
 //햄버거 메뉴
 // 열기
 const menuBtn = document.querySelector('.menu-btn');

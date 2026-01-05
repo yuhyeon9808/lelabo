@@ -187,6 +187,24 @@
   z-index: 10;
 }
 
+/* 스크롤 시 및 호버 시 헤더 상태 제어 */
+.m-header:hover,
+.m-header.on {
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.m-header:hover .menu-btn,
+.m-header:hover .cart-btn,
+.m-header.on .cart-btn {
+  color: var(--text-primary) !important;
+}
+
+.m-header:hover .logo img,
+.m-header.on .logo img {
+  filter: invert(1);
+}
+
 /* 1440 이하 */
 @media screen and (max-width: 1440px) {
   .m-header {
@@ -243,10 +261,6 @@
 .m-header .m-nav .logo {
   width: 100px;
   height: auto;
-}
-
-.m-header.on .m-nav .logo {
-  filter: invert(1);
 }
 
 /* 햄버거 menu */
