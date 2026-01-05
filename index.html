@@ -58,7 +58,7 @@
   </head>
   <body>
     <div class="container">
-      <!-- header -->
+      <!-- pc 버전 header -->
       <header class="header">
         <div class="header-inner">
           <!-- logo -->
@@ -70,6 +70,7 @@
           <!-- nav -->
           <nav class="pc-nav">
             <ul class="depth-1">
+              <!-- 프래그런스 -->
               <li class="has-2depth">
                 <a href="#" class="main-link">프래그런스</a>
                 <div class="depth-2-wrap">
@@ -112,7 +113,7 @@
                   </div>
                 </div>
               </li>
-
+              <!-- 홈 -->
               <li class="has-2depth">
                 <a href="#" class="main-link">홈</a>
                 <div class="depth-2-wrap">
@@ -175,7 +176,7 @@
                       <ul class="depth-2">
                         <li class="has-3depth">
                           <strong class="depth-3-title">헤어</strong>
-                          <ul class="depth-3">
+                          <ul class="vepth-3">
                             <li><a href="#">샴푸</a></li>
                             <li><a href="#">컨디셔너</a></li>
                             <li><a href="#">헤어 마스크</a></li>
@@ -206,9 +207,9 @@
                   </div>
                 </div>
               </li>
-
+              <!-- 라이프 스타일 -->
               <li><a href="#" class="main-link">라이프 스타일</a></li>
-
+              <!-- 기프트 -->
               <li class="has-2depth">
                 <a href="#" class="main-link">기프트</a>
                 <div class="depth-2-wrap">
@@ -229,7 +230,7 @@
                   </div>
                 </div>
               </li>
-
+              <!-- 디스커버리 -->
               <li class="has-2depth">
                 <a href="#" class="main-link">디스커버리</a>
                 <div class="depth-2-wrap">
@@ -251,7 +252,7 @@
                   </div>
                 </div>
               </li>
-
+              <!-- Le Labo -->
               <li class="has-2depth">
                 <a href="#" class="main-link">Le Labo</a>
                 <div class="depth-2-wrap">
@@ -276,7 +277,7 @@
                 </div>
               </li>
             </ul>
-
+            <!-- 카트 버튼 -->
             <a href="#" class="cart-link">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -300,6 +301,208 @@
           </nav>
         </div>
       </header>
+
+      <!-- 1440 이하 header -->
+      <header class="m-header on">
+        <nav class="m-nav">
+          <!-- 햄버거 메뉴  버튼 -->
+          <button class="menu-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-menu-icon lucide-menu"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" />
+            </svg>
+          </button>
+          <!-- logo -->
+          <h1 class="logo">
+            <a href="#" class="main-link">
+              <img src="./src/assets/icons/logo_w.png" alt="Le Labo" />
+            </a>
+          </h1>
+          <!-- 카트 버튼 -->
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="cart-btn"
+            >
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path
+                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+              ></path>
+            </svg>
+          </a>
+        </nav>
+      </header>
+      <!-- 햄버거 메뉴 -->
+      <div class="m-menu">
+        <!-- 닫기 버튼 -->
+        <div class="close-btn-wrapper">
+          <button class="close-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-x-icon lucide-x"
+            >
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </button>
+        </div>
+        <ul class="m-menu-list">
+          <!-- 프래그런스 -->
+          <li class="m-has-2depth">
+            <a href="#">프래그런스</a>
+            <ul class="m-2depth-list">
+              <li>
+                <a href="/html/product/eucalyptus-20.html">유칼립투스 20</a>
+              </li>
+              <li><a href="#">라방드 31</a></li>
+              <li><a href="#">떼 마차 26</a></li>
+              <li><a href="#">산탈 33</a></li>
+              <li><a href="#">어나더 13</a></li>
+              <li><a href="#">떼 누아 29</a></li>
+              <li><a href="#">로즈 31</a></li>
+              <li><a href="#">베르가못 22</a></li>
+              <li><a href="#">베이 19</a></li>
+              <li><a href="#">리스 41</a></li>
+              <li><a href="#">통카 25</a></li>
+              <li><a href="#">네롤리 36</a></li>
+              <li><a href="#">일랑 49</a></li>
+              <li><a href="#">플레르 도랑제 27</a></li>
+              <li><a href="#">패출리 24</a></li>
+              <li><a href="#">라다넘 18</a></li>
+              <li><a href="#">자스민 17</a></li>
+              <li><a href="#">베티버 46</a></li>
+              <li><a href="#">암브레트 9</a></li>
+            </ul>
+          </li>
+          <!-- 홈 -->
+          <li class="m-has-2depth">
+            <a href="#">홈</a>
+            <ul class="m-2depth-list">
+              <li><a href="#">시프레 21</a></li>
+              <li><a href="#">앰브록사이드 17</a></li>
+              <li><a href="#">상탈 26</a></li>
+              <li><a href="#">인센스 9</a></li>
+              <li><a href="#">팔로 산토 14</a></li>
+              <li><a href="#">칼론 17</a></li>
+              <li><a href="#">피그 15</a></li>
+              <li><a href="#">로리에 62</a></li>
+              <li><a href="#">페티그레인 21</a></li>
+              <li><a href="#">케이드 26</a></li>
+              <li><a href="#">핀 12</a></li>
+              <li><a href="#">버베인 32</a></li>
+              <li><a href="#">쎄드르 11</a></li>
+            </ul>
+          </li>
+
+          <!-- 퍼스널 케어-->
+          <li class="m-has-2depth">
+            <a href="#">퍼스널 케어</a>
+            <ul class="m-2depth-list">
+              <li class="m-has-3depth">
+                <strong class="m-depth-3-title">바디</strong>
+                <ul class="m-depth-3">
+                  <li><a href="#">핸드 솝</a></li>
+                  <li><a href="#">핸드 로션</a></li>
+                  <li><a href="#">핸드 젤</a></li>
+                  <li><a href="#">핸드 포마드</a></li>
+                  <li><a href="#">샤워 젤</a></li>
+                  <li><a href="#">샤워 오일</a></li>
+                  <li><a href="#">바디 크림</a></li>
+                  <li><a href="#">바디 스크럽</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="m-2depth-list">
+              <li class="m-has-3depth">
+                <strong class="m-depth-3-title">헤어</strong>
+                <ul class="m-depth-3">
+                  <li><a href="#">샴푸</a></li>
+                  <li><a href="#">컨디셔너</a></li>
+                  <li><a href="#">헤어 마스크</a></li>
+                  <li><a href="#">스크럽 샴푸</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="m-2depth-list">
+              <li class="m-has-3depth">
+                <strong class="m-depth-3-title">페이스</strong>
+                <ul class="m-depth-3">
+                  <li><a href="#">페이스 로션</a></li>
+                  <li><a href="#">페이스 클렌징 오일</a></li>
+                  <li><a href="#">립밤</a></li>
+                  <li><a href="#">페이스 스크럽</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- 라이프 스타일 -->
+          <li><a href="#" class="life">라이프 스타일</a></li>
+
+          <!-- 기프트 -->
+          <li class="m-has-2depth">
+            <a href="#">기프트</a>
+            <ul class="m-2depth-list">
+              <li><a href="#">맞춤형 기프트</a></li>
+              <li><a href="#">기프트 세트</a></li>
+              <li><a href="#">트래블</a></li>
+            </ul>
+          </li>
+
+          <!-- 디스커버리 -->
+          <li class="m-has-2depth">
+            <a href="#">디스커버리</a>
+            <ul class="m-2depth-list">
+              <li><a href="#">디스커버리 세트</a></li>
+              <li><a href="#">클래식 컬렉션</a></li>
+              <li><a href="#">퍼퓨밍 핸드 크림</a></li>
+              <li><a href="#">바 솝</a></li>
+            </ul>
+          </li>
+
+          <!-- Le Labo -->
+          <li class="m-has-2depth">
+            <a href="#">Le Labo</a>
+            <ul class="m-2depth-list">
+              <li><a href="#">매니페스토</a></li>
+              <li><a href="#">르 라보 랩</a></li>
+              <li><a href="#">르 라보를 만드는 커뮤니티</a></li>
+              <li><a href="#">소울</a></li>
+              <li><a href="#">컬렉션</a></li>
+              <li><a href="#">브랜드의 설립</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
       <!-- video  -->
       <video
         src="./src/assets/images/home/main_video.mp4"

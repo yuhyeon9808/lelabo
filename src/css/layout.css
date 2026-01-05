@@ -1,5 +1,5 @@
-/* header */
-header {
+/* pc header */
+.header {
   width: 100%;
   height: 80px;
   position: fixed;
@@ -7,6 +7,19 @@ header {
   z-index: 1000;
   transition: 0.3s;
   padding: 0 50px;
+}
+/* 1440 이하 */
+@media screen and (max-width: 1440px) {
+  .header {
+    display: none;
+  }
+}
+
+/* 1440 이상 */
+@media screen and (min-width: 1440px) {
+  .header {
+    display: block;
+  }
 }
 
 .header.detail {
@@ -128,6 +141,7 @@ header {
   font-weight: 800;
   margin-bottom: 15px;
   color: var(--text-primary);
+  white-space: nowrap;
 }
 
 .depth-3 {
@@ -159,4 +173,166 @@ header {
 .cart-btn {
   color: var(--bg-surface);
   transition: 0.3s;
+}
+
+/* 1440 이하 m-header */
+.m-header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  padding: 0px 10px;
+  z-index: 10;
+}
+
+/* 1440 이하 */
+@media screen and (max-width: 1440px) {
+  .m-header {
+    display: flex;
+  }
+}
+
+/* 1440 이상 */
+@media screen and (min-width: 1440px) {
+  .m-header {
+    display: none;
+  }
+}
+
+/* 768 이상 */
+@media screen and (min-width: 768px) {
+  .m-header {
+    padding: 0px 50px;
+  }
+}
+
+/* 768 이하 */
+@media screen and (max-width: 768px) {
+  .m-header {
+    display: flex;
+    height: 60px;
+  }
+}
+
+.m-header.on {
+  background-color: var(--bg-surface);
+}
+
+/* m-nav */
+.m-header .m-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.m-header .m-nav .menu-btn {
+  color: var(--bg-surface);
+}
+
+.m-header.on .m-nav .menu-btn {
+  color: var(--text-primary);
+}
+
+.m-header.on .m-nav .cart-btn {
+  color: var(--text-primary);
+  margin: 0px 10px;
+}
+
+.m-header .m-nav .logo {
+  width: 100px;
+  height: auto;
+}
+
+.m-header.on .m-nav .logo {
+  filter: invert(1);
+}
+
+/* 햄버거 menu */
+.m-menu {
+  width: 320px;
+  height: 100dvh;
+  background-color: var(--bg-surface);
+  position: fixed;
+  left: -320px;
+  transition: 0.3s;
+  z-index: 1050;
+  padding: 0px 20px;
+}
+
+.m-menu.open {
+  position: fixed;
+  left: 0px;
+  transition: 0.3s;
+}
+
+.m-menu .close-btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.m-menu .close-btn {
+  padding: 8px;
+  margin-top: 10px;
+}
+
+.m-menu-list {
+  height: 100dvh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.m-menu .m-menu-list .m-has-2depth:nth-child(1) {
+  margin-top: 10px;
+}
+
+.m-menu .m-menu-list .m-has-2depth > a,
+.life {
+  font-weight: 600;
+}
+
+.m-menu .m-menu-list .m-has-2depth a,
+.life {
+  display: block;
+  padding: 15px 0px;
+}
+
+.m-menu .m-menu-list .m-has-2depth a:hover,
+.life:hover,
+.m-depth-3-title:hover {
+  background-color: var(--bg-footer);
+  border-radius: 4px;
+}
+
+.m-menu .m-menu-list .m-has-2depth a,
+.life {
+  padding-left: 20px;
+}
+
+/* 투뎁스 안보이게 */
+.m-menu .m-menu-list .m-2depth-list,
+.m-depth-3 {
+  display: none;
+}
+
+/* 투뎁스 보이게 */
+.m-menu .m-menu-list .m-2depth-list.show {
+  display: block;
+  padding-left: 10px;
+}
+
+.m-depth-3-title {
+  display: block;
+  padding: 15px 0px;
+  padding-left: 30px;
+}
+
+.m-depth-3 {
+  padding-left: 20px;
+}
+
+.m-depth-3.show {
+  display: block;
 }
