@@ -156,3 +156,54 @@
     padding-bottom: 5px;
   }
 }
+
+/* 브랜드 스토리 섹션 */
+.brand-story {
+  width: 100%;
+  height: 465px;
+  background-image: url('/src/assets/images/home/bg_brandstory.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.brand-story .brand-story-inner {
+  min-width: 1440px;
+  margin: 0 auto;
+}
+
+.brand-story .brand-story-wrapper {
+  max-width: 356px;
+  color: var(--bg-surface);
+  margin-left: 50px;
+}
+
+.brand-story .brand-story-wrapper .brand-story-title {
+  font-size: 48px;
+}
+
+.brand-story .brand-story-wrapper .brand-story-dis {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .brand-story .brand-story-wrapper {
+    max-width: 324px;
+    margin-left: 25px;
+  }
+
+  .brand-story .brand-story-wrapper .brand-story-title {
+    font-size: 36px;
+  }
+
+  .brand-story .brand-story-wrapper .brand-story-dis {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
