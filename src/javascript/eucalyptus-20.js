@@ -13,8 +13,9 @@ const renderProduct = (data) => {
   wrapper.innerHTML = /*html*/ `
   ${data
     .map(
-      (item) => /*html*/ `<li class="product-card">
-      <a href=${item.link}>
+      (item) => /*html*/ `
+    <li class="product-card">
+     <a href="${item.link}?volume=${encodeURIComponent(item.volume)}">
        <img src="${item.image}" alt="${item.name} ${item.type}" />
        <div class="product-card-text-wrapper">
        <div class="product-card-textbox">

@@ -1,0 +1,27 @@
+[
+  {
+    "volume": "1.5ml",
+    "price": 9000,
+    "image": "/src/assets/images/detail/EUCALYPTUS_20_detail_1.png"
+  },
+  {
+    "volume": "15ml",
+    "price": 138000,
+    "image": "/src/assets/images/detail/EUCALYPTUS_20_15_detail_1.png"
+  },
+  {
+    "volume": "50ml",
+    "price": 310000,
+    "image": "/src/assets/images/detail/EUCALYPTUS_20_50_detail_1.png"
+  },
+  {
+    "volume": "100ml",
+    "price": 458000,
+    "image": "/src/assets/images/detail/EUCALYPTUS_20_100_detail_1.png"
+  },
+  {
+    "volume": "500ml",
+    "price": 1580000,
+    "image": "/src/assets/images/detail/EUCALYPTUS_20_500_detail_1.png"
+  }
+]

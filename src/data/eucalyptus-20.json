@@ -6,7 +6,7 @@
     "volume": "1.5ml",
     "price": 9000,
     "image": "/src/assets/images/collection/EUCALYPTUS_20.png",
-    "link": "/src/html/product/eucalyptus-20.html"
+    "link": "/src/html/product/eucalyptus-20_detail.html"
   },
   {
     "id": "eucalyptus-20-15",
@@ -15,7 +15,7 @@
     "volume": "15ml",
     "price": 138000,
     "image": "/src/assets/images/collection/EUCALYPTUS_20_15.png",
-    "link": "/src/html/product/eucalyptus-20.html"
+    "link": "/src/html/product/eucalyptus-20_detail.html"
   },
   {
     "id": "eucalyptus-20-50",
@@ -24,7 +24,7 @@
     "volume": "50ml",
     "price": 310000,
     "image": "/src/assets/images/collection/EUCALYPTUS_20_50.png",
-    "link": "/src/html/product/eucalyptus-20.html"
+    "link": "/src/html/product/eucalyptus-20_detail.html"
   },
   {
     "id": "eucalyptus-20-100",
@@ -33,7 +33,7 @@
     "volume": "100ml",
     "price": 458000,
     "image": "/src/assets/images/collection/EUCALYPTUS_20_100.png",
-    "link": "/src/html/product/eucalyptus-20.html"
+    "link": "/src/html/product/eucalyptus-20_detail.html"
   },
   {
     "id": "eucalyptus-20-500",
@@ -42,6 +42,6 @@
     "volume": "500ml",
     "price": 1580000,
     "image": "/src/assets/images/collection/EUCALYPTUS_20_500.png",
-    "link": "/src/html/product/eucalyptus-20.html"
+    "link": "/src/html/product/eucalyptus-20_detail.html"
   }
 ]

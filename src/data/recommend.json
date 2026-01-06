@@ -1,0 +1,38 @@
+[
+  {
+    "id": "the-matcha-26-50",
+    "name": "THÉ MATCHA 26",
+    "type": "오 드 퍼퓸",
+    "volume": "50ml",
+    "price": 310000,
+    "image": "/src/assets/images/detail/THE_MATCHA_26.png",
+    "link": "#"
+  },
+  {
+    "id": "verveine-32-245",
+    "name": "VERVEINE 32",
+    "type": "클래식 캔들",
+    "volume": "245g",
+    "price": 118000,
+    "image": "/src/assets/images/detail/VERVEINE_32.png",
+    "link": "#"
+  },
+  {
+    "id": "lys-41-body-lotion-237",
+    "name": "LYS 41",
+    "type": "바디 로션",
+    "volume": "237ml",
+    "price": 113000,
+    "image": "/src/assets/images/detail/LYS_41_BODY_LOTION.png",
+    "link": "#"
+  },
+  {
+    "id": "lys-41-shower-gel-237",
+    "name": "LYS 41",
+    "type": "샤워 젤",
+    "volume": "237ml",
+    "price": 310000,
+    "image": "/src/assets/images/detail/LYS_41_SHOWER_GEL.png",
+    "link": "#"
+  }
+]
