@@ -109,7 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //추천 탭
 //정보 가져오기
-
 const fetchRecommend = async () => {
   const response = await fetch('/src/data/recommend.json');
   const data = await response.json();
