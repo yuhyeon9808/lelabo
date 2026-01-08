@@ -1,3 +1,57 @@
+/* 공통 클래스 */
+.view-btn {
+  display: block;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: end;
+}
+
+.product-card {
+  width: 305px;
+  height: 547px;
+  border: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card-text-wrapper {
+  width: 258px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-card-textbox {
+  width: 258px;
+}
+.product-card .product-text-title {
+  font-size: 24px;
+}
+
+.product-card .product-text-type,
+.product-card .product-text-volume {
+  font-size: 20px;
+  color: var(--text-secondary);
+}
+
+.product-card .product-text-volume {
+  display: block;
+  padding: 5px 0px;
+}
+
+.product-card .product-text-price {
+  display: flex;
+  justify-content: end;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.product-card .view-btn {
+  font-size: 20px;
+}
+
 /* pc header */
 .header {
   width: 100%;
@@ -270,18 +324,18 @@
   height: 100dvh;
   background-color: var(--bg-surface);
   position: fixed;
+  top: 0;
   left: -320px;
-  transition: 0.3s;
+  transition: left 0.3s;
   z-index: 1050;
   padding: 0px 20px;
 }
 
 .m-menu.open {
-  position: fixed;
   left: 0px;
-  transition: 0.3s;
 }
 
+/* 닫기 버튼 */
 .m-menu .close-btn-wrapper {
   width: 100%;
   display: flex;
@@ -293,66 +347,94 @@
   margin-top: 10px;
 }
 
+/* 리스트 스크롤 */
 .m-menu-list {
   height: 100dvh;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  padding-bottom: 40px;
 }
 
-.m-menu .m-menu-list .m-has-2depth:nth-child(1) {
+.m-menu .m-menu-list > li:first-child {
   margin-top: 10px;
 }
 
-.m-menu .m-menu-list .m-has-2depth > a,
-.life {
-  font-weight: 600;
+.m-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.m-menu .m-menu-list .m-has-2depth a,
-.life {
+.m-menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.m-menu details {
+  margin: 0;
+  padding: 0;
+}
+
+/* details 기본 마커 숨김 */
+.m-menu details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.m-menu details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* title */
+.m-menu details.m-2depth > summary,
+.m-menu details.m-3depth > summary,
+.m-menu .life {
   display: block;
   padding: 15px 0px;
+  padding-left: 20px;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
-.m-menu .m-menu-list .m-has-2depth a:hover,
-.life:hover,
-.m-depth-3-title:hover {
+/* Hover */
+.m-menu details.m-2depth > summary:hover,
+.m-menu details.m-3depth > summary:hover,
+.m-menu .life:hover,
+.m-menu .m-2depth-list a:hover,
+.m-menu .m-depth-3 a:hover {
   background-color: var(--bg-footer);
   border-radius: 4px;
 }
 
-.m-menu .m-menu-list .m-has-2depth a,
-.life {
-  padding-left: 20px;
-}
+/* 2depth */
 
-/* 투뎁스 안보이게 */
-.m-menu .m-menu-list .m-2depth-list,
-.m-depth-3 {
-  display: none;
-}
-
-/* 투뎁스 보이게 */
-.m-menu .m-menu-list .m-2depth-list.show {
-  display: block;
+.m-menu .m-2depth-list {
   padding-left: 10px;
 }
 
-.m-depth-3-title {
+.m-menu .m-2depth-list a {
   display: block;
   padding: 15px 0px;
+  padding-left: 20px;
+  line-height: 1.2;
+}
+
+/* 3depth */
+
+.m-menu details.m-3depth > summary {
   padding-left: 30px;
 }
 
-.m-depth-3 {
+.m-menu .m-depth-3 {
   padding-left: 20px;
 }
 
-/* 쓰리뎁스 보이게 */
-.m-depth-3.show {
+.m-menu .m-depth-3 a {
   display: block;
+  padding: 15px 0px;
+  padding-left: 20px;
+  line-height: 1.2;
 }
-
 /* footer */
 
 footer {

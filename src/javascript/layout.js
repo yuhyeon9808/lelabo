@@ -34,30 +34,22 @@ closeBtn.addEventListener('click', () => {
   menu.classList.remove('open');
 });
 
-//투뎁스 보이게
-const oneDepthEl = document.querySelectorAll('.m-has-2depth');
+//투뎁스 하나만 열리게
+document.addEventListener('DOMContentLoaded', () => {
+  const mMenu = document.querySelector('.m-menu');
+  const twoDepthDetails = mMenu.querySelectorAll('details.m-2depth');
 
-oneDepthEl.forEach((oneDepth) => {
-  oneDepth.addEventListener('click', () => {
-    // 모든 투뎁스 닫기
-    document.querySelectorAll('.m-2depth-list').forEach((el) => {
-      el.classList.remove('show');
+  // 초기 로드시 열림 상태 제거
+  twoDepthDetails.forEach((d) => d.removeAttribute('open'));
+
+  // 각 2depth에 toggle 리스너 부착
+  twoDepthDetails.forEach((current) => {
+    current.addEventListener('toggle', () => {
+      if (!current.open) return;
+
+      twoDepthDetails.forEach((d) => {
+        if (d !== current) d.removeAttribute('open');
+      });
     });
-
-    // 클릭한 원뎁스의 투뎁스만 열기
-    const twoDepth = oneDepth.querySelectorAll('.m-2depth-list');
-    twoDepth.forEach((el) => {
-      el.classList.add('show');
-    });
-  });
-});
-
-//쓰리뎁스 보이게
-const twoDepthEl = document.querySelectorAll('.m-2depth-list');
-twoDepthEl.forEach((twoDepth) => {
-  twoDepth.addEventListener('click', (e) => {
-    e.stopPropagation();
-    const threeDepth = twoDepth.querySelector('.m-depth-3');
-    threeDepth.classList.toggle('show');
   });
 });

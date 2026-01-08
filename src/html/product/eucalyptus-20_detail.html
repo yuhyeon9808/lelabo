@@ -359,10 +359,11 @@
         </nav>
       </header>
       <!-- 햄버거 메뉴 -->
+        <!-- 햄버거 메뉴 -->
       <div class="m-menu">
         <!-- 닫기 버튼 -->
         <div class="close-btn-wrapper">
-          <button class="close-btn">
+          <button class="close-btn" type="button" aria-label="메뉴 닫기">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -374,66 +375,78 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               class="lucide lucide-x-icon lucide-x"
+              aria-hidden="true"
             >
               <path d="M18 6 6 18" />
               <path d="m6 6 12 12" />
             </svg>
           </button>
         </div>
+
+        <!-- 메뉴 리스트 -->
         <ul class="m-menu-list">
           <!-- 프래그런스 -->
-          <li class="m-has-2depth">
-            <a href="#">프래그런스</a>
-            <ul class="m-2depth-list">
-              <li>
-                <a href="/src/html/product/eucalyptus-20.html">유칼립투스 20</a>
-              </li>
-              <li><a href="#">라방드 31</a></li>
-              <li><a href="#">떼 마차 26</a></li>
-              <li><a href="#">산탈 33</a></li>
-              <li><a href="#">어나더 13</a></li>
-              <li><a href="#">떼 누아 29</a></li>
-              <li><a href="#">로즈 31</a></li>
-              <li><a href="#">베르가못 22</a></li>
-              <li><a href="#">베이 19</a></li>
-              <li><a href="#">리스 41</a></li>
-              <li><a href="#">통카 25</a></li>
-              <li><a href="#">네롤리 36</a></li>
-              <li><a href="#">일랑 49</a></li>
-              <li><a href="#">플레르 도랑제 27</a></li>
-              <li><a href="#">패출리 24</a></li>
-              <li><a href="#">라다넘 18</a></li>
-              <li><a href="#">자스민 17</a></li>
-              <li><a href="#">베티버 46</a></li>
-              <li><a href="#">암브레트 9</a></li>
-            </ul>
-          </li>
-          <!-- 홈 -->
-          <li class="m-has-2depth">
-            <a href="#">홈</a>
-            <ul class="m-2depth-list">
-              <li><a href="#">시프레 21</a></li>
-              <li><a href="#">앰브록사이드 17</a></li>
-              <li><a href="#">상탈 26</a></li>
-              <li><a href="#">인센스 9</a></li>
-              <li><a href="#">팔로 산토 14</a></li>
-              <li><a href="#">칼론 17</a></li>
-              <li><a href="#">피그 15</a></li>
-              <li><a href="#">로리에 62</a></li>
-              <li><a href="#">페티그레인 21</a></li>
-              <li><a href="#">케이드 26</a></li>
-              <li><a href="#">핀 12</a></li>
-              <li><a href="#">버베인 32</a></li>
-              <li><a href="#">쎄드르 11</a></li>
-            </ul>
+          <li>
+            <details class="m-2depth">
+              <summary>프래그런스</summary>
+              <ul class="m-2depth-list">
+                <li>
+                  <a href="/src/html/product/eucalyptus-20.html"
+                    >유칼립투스 20</a
+                  >
+                </li>
+                <li><a href="#">라방드 31</a></li>
+                <li><a href="#">떼 마차 26</a></li>
+                <li><a href="#">산탈 33</a></li>
+                <li><a href="#">어나더 13</a></li>
+                <li><a href="#">떼 누아 29</a></li>
+                <li><a href="#">로즈 31</a></li>
+                <li><a href="#">베르가못 22</a></li>
+                <li><a href="#">베이 19</a></li>
+                <li><a href="#">리스 41</a></li>
+                <li><a href="#">통카 25</a></li>
+                <li><a href="#">네롤리 36</a></li>
+                <li><a href="#">일랑 49</a></li>
+                <li><a href="#">플레르 도랑제 27</a></li>
+                <li><a href="#">패출리 24</a></li>
+                <li><a href="#">라다넘 18</a></li>
+                <li><a href="#">자스민 17</a></li>
+                <li><a href="#">베티버 46</a></li>
+                <li><a href="#">암브레트 9</a></li>
+              </ul>
+            </details>
           </li>
 
-          <!-- 퍼스널 케어-->
-          <li class="m-has-2depth">
-            <a href="#">퍼스널 케어</a>
-            <ul class="m-2depth-list">
-              <li class="m-has-3depth">
-                <strong class="m-depth-3-title">바디</strong>
+          <!--  홈  -->
+          <li>
+            <details class="m-2depth">
+              <summary>홈</summary>
+              <ul class="m-2depth-list">
+                <li><a href="#">시프레 21</a></li>
+                <li><a href="#">앰브록사이드 17</a></li>
+                <li><a href="#">상탈 26</a></li>
+                <li><a href="#">인센스 9</a></li>
+                <li><a href="#">팔로 산토 14</a></li>
+                <li><a href="#">칼론 17</a></li>
+                <li><a href="#">피그 15</a></li>
+                <li><a href="#">로리에 62</a></li>
+                <li><a href="#">페티그레인 21</a></li>
+                <li><a href="#">케이드 26</a></li>
+                <li><a href="#">핀 12</a></li>
+                <li><a href="#">버베인 32</a></li>
+                <li><a href="#">쎄드르 11</a></li>
+              </ul>
+            </details>
+          </li>
+
+          <!-- 퍼스널 케어  -->
+          <li>
+            <details class="m-2depth">
+              <summary>퍼스널 케어</summary>
+
+              <!-- 바디 (3depth) -->
+              <details class="m-3depth">
+                <summary>바디</summary>
                 <ul class="m-depth-3">
                   <li><a href="#">핸드 솝</a></li>
                   <li><a href="#">핸드 로션</a></li>
@@ -444,66 +457,76 @@
                   <li><a href="#">바디 크림</a></li>
                   <li><a href="#">바디 스크럽</a></li>
                 </ul>
-              </li>
-            </ul>
-            <ul class="m-2depth-list">
-              <li class="m-has-3depth">
-                <strong class="m-depth-3-title">헤어</strong>
+              </details>
+
+              <!--  헤어 (3depth) -->
+              <details class="m-3depth">
+                <summary>헤어</summary>
                 <ul class="m-depth-3">
                   <li><a href="#">샴푸</a></li>
                   <li><a href="#">컨디셔너</a></li>
                   <li><a href="#">헤어 마스크</a></li>
                   <li><a href="#">스크럽 샴푸</a></li>
                 </ul>
-              </li>
-            </ul>
-            <ul class="m-2depth-list">
-              <li class="m-has-3depth">
-                <strong class="m-depth-3-title">페이스</strong>
+              </details>
+
+              <!--  페이스 (3depth) -->
+              <details class="m-3depth">
+                <summary>페이스</summary>
                 <ul class="m-depth-3">
                   <li><a href="#">페이스 로션</a></li>
                   <li><a href="#">페이스 클렌징 오일</a></li>
                   <li><a href="#">립밤</a></li>
                   <li><a href="#">페이스 스크럽</a></li>
                 </ul>
-              </li>
-            </ul>
+              </details>
+            </details>
           </li>
-          <!-- 라이프 스타일 -->
-          <li><a href="#" class="life">라이프 스타일</a></li>
+
+          <!-- 라이프 스타일  -->
+          <li>
+            <a href="#" class="life">라이프 스타일</a>
+          </li>
 
           <!-- 기프트 -->
-          <li class="m-has-2depth">
-            <a href="#">기프트</a>
-            <ul class="m-2depth-list">
-              <li><a href="#">맞춤형 기프트</a></li>
-              <li><a href="#">기프트 세트</a></li>
-              <li><a href="#">트래블</a></li>
-            </ul>
+          <li>
+            <details class="m-2depth">
+              <summary>기프트</summary>
+              <ul class="m-2depth-list">
+                <li><a href="#">맞춤형 기프트</a></li>
+                <li><a href="#">기프트 세트</a></li>
+                <li><a href="#">트래블</a></li>
+              </ul>
+            </details>
           </li>
 
-          <!-- 디스커버리 -->
-          <li class="m-has-2depth">
-            <a href="#">디스커버리</a>
-            <ul class="m-2depth-list">
-              <li><a href="#">디스커버리 세트</a></li>
-              <li><a href="#">클래식 컬렉션</a></li>
-              <li><a href="#">퍼퓨밍 핸드 크림</a></li>
-              <li><a href="#">바 솝</a></li>
-            </ul>
+          <!-- 디스커버리  -->
+
+          <li>
+            <details class="m-2depth">
+              <summary>디스커버리</summary>
+              <ul class="m-2depth-list">
+                <li><a href="#">디스커버리 세트</a></li>
+                <li><a href="#">클래식 컬렉션</a></li>
+                <li><a href="#">퍼퓨밍 핸드 크림</a></li>
+                <li><a href="#">바 솝</a></li>
+              </ul>
+            </details>
           </li>
 
-          <!-- Le Labo -->
-          <li class="m-has-2depth">
-            <a href="#">Le Labo</a>
-            <ul class="m-2depth-list">
-              <li><a href="#">매니페스토</a></li>
-              <li><a href="#">르 라보 랩</a></li>
-              <li><a href="#">르 라보를 만드는 커뮤니티</a></li>
-              <li><a href="#">소울</a></li>
-              <li><a href="#">컬렉션</a></li>
-              <li><a href="#">브랜드의 설립</a></li>
-            </ul>
+          <!-- Le Labo  -->
+          <li>
+            <details class="m-2depth">
+              <summary>Le Labo</summary>
+              <ul class="m-2depth-list">
+                <li><a href="#">매니페스토</a></li>
+                <li><a href="#">르 라보 랩</a></li>
+                <li><a href="#">르 라보를 만드는 커뮤니티</a></li>
+                <li><a href="#">소울</a></li>
+                <li><a href="#">컬렉션</a></li>
+                <li><a href="#">브랜드의 설립</a></li>
+              </ul>
+            </details>
           </li>
         </ul>
       </div>
